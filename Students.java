@@ -25,7 +25,7 @@ public class Students {
 	        Statement stm = conn.createStatement();
 	        
 	        //execute query 
-	        String query = "create database CodingWallah";
+	        String query = "create database Coding";
 	        stm.execute(query);
 	        System.out.println("Databse created successfully");
 	        
@@ -34,7 +34,7 @@ public class Students {
 	}
 
 	public void createTable() throws ClassNotFoundException, SQLException {
-		    String url = "jdbc:mysql://localhost:3306/CodingWallah";
+		    String url = "jdbc:mysql://localhost:3306/Coding";
 	        String username = "root";
 	        String password = "Shubh@8055";
 	        
@@ -61,7 +61,7 @@ public class Students {
 		    String url = "jdbc:mysql://localhost:3306/";
 	        String username = "root";
 	        String password = "Shubh@8055";
-	        String db = "CodingWallah";
+	        String db = "Coding";
 	        
 	        //driver
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -92,7 +92,7 @@ public class Students {
 		 String url = "jdbc:mysql://localhost:3306/";
 	        String username = "root";
 	        String password = "Shubh@8055";
-	        String db = "CodingWallah";
+	        String db = "Coding";
 	        
 	        //driver
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -122,7 +122,7 @@ public class Students {
 		String url = "jdbc:mysql://localhost:3306/";
         String username = "root";
         String password = "Shubh@8055";
-        String db = "CodingWallah";
+        String db = "Coding";
         
         //driver
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -151,7 +151,7 @@ public class Students {
 		    String url = "jdbc:mysql://localhost:3306/";
 		    String username = "root";
 	        String password = "Shubh@8055";
-	        String db = "CodingWallah";
+	        String db = "Coding";
 	        
 	        //driver
 			Class.forName("com.mysql.cj.jdbc.Driver");
