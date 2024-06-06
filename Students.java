@@ -10,12 +10,12 @@ import java.sql.Statement;
 public class Students {
 
 	public void createDatabase() throws ClassNotFoundException, SQLException {
-		    String url = "jdbc:mysql://localhost:3306/";
+		String url = "jdbc:mysql://localhost:3306/";
 	        String username = "root";
 	        String password = "Shubh@8055";
 	        
 	        //driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 	        
 	        //connection establish
 	        Connection conn = DriverManager.getConnection(url,username,password);
@@ -34,12 +34,12 @@ public class Students {
 	}
 
 	public void createTable() throws ClassNotFoundException, SQLException {
-		    String url = "jdbc:mysql://localhost:3306/Coding";
+		String url = "jdbc:mysql://localhost:3306/Coding";
 	        String username = "root";
 	        String password = "Shubh@8055";
 	        
 	        //driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 	        
 	        //connection establish
 	        Connection conn = DriverManager.getConnection(url,username,password);
@@ -58,13 +58,13 @@ public class Students {
 	}
 
 	public void createData() throws ClassNotFoundException, SQLException {
-		    String url = "jdbc:mysql://localhost:3306/";
+		String url = "jdbc:mysql://localhost:3306/";
 	        String username = "root";
 	        String password = "Shubh@8055";
 	        String db = "Coding";
 	        
 	        //driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 	        
 	        //connection establish
 	        Connection conn = DriverManager.getConnection(url+db,username,password);
@@ -89,13 +89,13 @@ public class Students {
 	}
 
 	public void readData() throws ClassNotFoundException, SQLException {
-		 String url = "jdbc:mysql://localhost:3306/";
+		String url = "jdbc:mysql://localhost:3306/";
 	        String username = "root";
 	        String password = "Shubh@8055";
 	        String db = "Coding";
 	        
 	        //driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 	        
 	        //connection establish
 	        Connection conn = DriverManager.getConnection(url+db,username,password);
@@ -119,17 +119,17 @@ public class Students {
 	}
 
 	public void updateData() throws ClassNotFoundException, SQLException {
-		String url = "jdbc:mysql://localhost:3306/";
+	String url = "jdbc:mysql://localhost:3306/";
         String username = "root";
         String password = "Shubh@8055";
         String db = "Coding";
         
         //driver
-		Class.forName("com.mysql.cj.jdbc.Driver");
+	Class.forName("com.mysql.cj.jdbc.Driver");
         
         //connection establish
         Connection conn = DriverManager.getConnection(url+db,username,password);
-//        System.out.println("Database Connected Successfully " + conn);
+//      System.out.println("Database Connected Successfully " + conn);
         
         //statement 
         String query = "Update students SET name = ? where city = ?";
@@ -148,13 +148,13 @@ public class Students {
 	}
 
 	public void deleteData() throws ClassNotFoundException, SQLException {
-		    String url = "jdbc:mysql://localhost:3306/";
-		    String username = "root";
+		String url = "jdbc:mysql://localhost:3306/";
+		String username = "root";
 	        String password = "Shubh@8055";
 	        String db = "Coding";
 	        
 	        //driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 	        
 	        //connection establish
 	        Connection conn = DriverManager.getConnection(url+db,username,password);
